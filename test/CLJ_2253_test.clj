@@ -15,21 +15,23 @@
 ;
 
 (ns CLJ-2253-test
-  (:require [midje.sweet :refer :all]
-            [CLJ-2253    :refer :all]))
+  (:require [clojure.test :refer :all]
+            [CLJ-2253     :refer :all]))
 
-(facts "Basic BASE64 encoding tests"
-  (base64-encode nil)                                              => throws java.lang.NullPointerException
-  (base64-encode "")                                               => ""
-  (base64-encode "foo")                                            => "Zm9v"
-  (base64-encode "This library really shouldn't have to exist...") => "VGhpcyBsaWJyYXJ5IHJlYWxseSBzaG91bGRuJ3QgaGF2ZSB0byBleGlzdC4uLg=="
-  (base64-encode "💩")                                            => "8J+SqQ=="
-  )
+(deftest base64-encoding
+  (testing "Basic BASE64 encoding"
+    (is (thrown? java.lang.NullPointerException                               (base64-encode nil)))
+    (is (= ""                                                                 (base64-encode "")))
+    (is (= "Zm9v"                                                             (base64-encode "foo")))
+    (is (= "VGhpcyBsaWJyYXJ5IHJlYWxseSBzaG91bGRuJ3QgaGF2ZSB0byBleGlzdC4uLg==" (base64-encode "This library really shouldn't have to exist...")))
+    (is (= "8J+SqQ=="                                                         (base64-encode "💩")))))
 
 (println "Please open https://webhook.site/#/8f45a5ba-d1a7-48be-bc17-416c7699de05 in a browser, in order to confirm that basic auth information is being sent correctly.")
+(println "Please also note that when java.net.SocketExceptions are thrown, it indicates that webhook.site has been overloaded and is shedding load.")
 
-(facts "Slurping from URLs"
-  (slurp "https://webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")                     => ""
-  (slurp "https://user:password@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")       => ""
-  (slurp "https://someoneelse:letmein@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05") => ""
-  )
+(deftest slurping-urls
+  (testing "Slurping from URLs"
+    (is (= ""                        (slurp "https://webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
+    (is (= ""                        (slurp "https://username:password@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
+    (is (= ""                        (slurp "https://someoneelse:letmein@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
+    (is (thrown? java.io.IOException (slurp "https://invalid:invalid@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05/401")))))

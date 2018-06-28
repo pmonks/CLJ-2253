@@ -24,12 +24,8 @@
   :min-lein-version    "2.8.1"
   :repositories        [["sonatype-snapshots" {:url "https://oss.sonatype.org/content/groups/public" :snapshots true}]
                         ["jitpack"            {:url "https://jitpack.io"}]]
-  :dependencies        [
-                         [org.clojure/clojure "1.9.0"]
-                       ]
-  :profiles            {:dev {:dependencies [[midje "1.9.1"]]
-                              :plugins      [[lein-midje    "3.2.1"]
-                                             [lein-licenses "0.2.2"]]}}
+  :dependencies        [[org.clojure/clojure "1.9.0"]]
+  :profiles            {:dev {:plugins [[lein-licenses "0.2.2"]]}}
   :deploy-repositories [
                          ["snapshots" {:url      "https://clojars.org/repo"
                                        :username :env/clojars_username

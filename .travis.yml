@@ -16,7 +16,7 @@ jdk:
   - oraclejdk9
   - oraclejdk10
 
-script: lein do version, check, midje
+script: lein do version, check, test
 
 deploy:
   # Deploy binaries to Clojars, using LTS version of Java
