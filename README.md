@@ -32,12 +32,12 @@ You will be dropped in a REPL with the library downloaded and ready for use.
 
 ## Usage
 
-The functionality is provided by a single namespace, `CLJ-2253`, that will work it's hacky magic as soon as its loaded.
+The functionality is provided by a single namespace, `CLJ-2253`, that will work its hacky magic as soon as its loaded.
 
 Require it in the REPL (incl. a `lein try` REPL):
 
 ```clojure
-(require '[CLJ-2253] :reload-all)
+(require '[CLJ-2253])
 ```
 
 Require it in your project:
