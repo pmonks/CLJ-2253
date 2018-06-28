@@ -10,16 +10,16 @@ This library implements a workaround for [CLJ-2253](https://dev.clojure.org/jira
 
 ## Installation
 
-CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/org.pmonks/CLJ-2253).
+CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/org.pmonks/clj-2253).
 Plonk the following in your project.clj :dependencies, `lein deps` and you should be good to go:
 
 ```clojure
-[org.clojars.pmonks/CLJ-2253 "#.#.#"]   ; Where #.#.# is replaced with an actual version number
+[org.clojars.pmonks/clj-2253 "#.#.#"]   ; Where #.#.# is replaced with an actual version number
 ```
 
 The latest released version is:
 
-[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.pmonks/CLJ-2253.svg)](https://clojars.org/org.clojars.pmonks/CLJ-2253)
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.pmonks/clj-2253.svg)](https://clojars.org/org.clojars.pmonks/clj-2253)
 
 ### Trying it Out
 Alternatively, you may prefer to kick the library's tyres without creating a project.  This is a snap with the awesome [`lein try` plugin](https://github.com/rkneufeld/lein-try):
