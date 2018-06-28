@@ -19,13 +19,11 @@
   "A workaround for https://dev.clojure.org/jira/browse/CLJ-2253.  Simply require (or use) this namespace before using slurp and you're done."
   (:require [clojure.java.io :as io]))
 
-(defmacro base64-encode
-  [^String s]
-  (let [jvm-version (System/getProperty "java.version")]
-    (if (or (clojure.string/starts-with? jvm-version "1.6")
-            (clojure.string/starts-with? jvm-version "1.7"))
-      `(javax.xml.bind.DatatypeConverter/printBase64Binary (.getBytes ~s))
-      `(.encodeToString (java.util.Base64/getEncoder) (.getBytes ~s)))))
+(try
+  (Class/forName "java.util.Base64")
+  (load "base64/jdk18up")
+  (catch ClassNotFoundException cnfe
+    (load "base64/jdk17down")))
 
 (defn- open-input-stream [^java.net.URL url]
   (if-let [user-info (.getUserInfo url)]
