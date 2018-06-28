@@ -16,23 +16,31 @@
 ;
 
 (defproject org.clojars.pmonks/CLJ-2253 "0.1.0-SNAPSHOT"
-  :description      "A workaround for https://dev.clojure.org/jira/browse/CLJ-2253"
-  :url              "https://github.com/pmonks/CLJ-2253"
-  :license          {:spdx-license-identifier "Apache-2.0"
-                     :name                    "Apache License, Version 2.0"
-                     :url                     "http://www.apache.org/licenses/LICENSE-2.0"}
-  :min-lein-version "2.8.1"
-  :repositories     [["sonatype-snapshots" {:url "https://oss.sonatype.org/content/groups/public" :snapshots true}]
-                     ["jitpack"            {:url "https://jitpack.io"}]]
-  :dependencies     [
-                      [org.clojure/clojure "1.9.0"]
-                    ]
-  :profiles         {:dev {:dependencies [[midje "1.9.1"]]
-                           :plugins      [[lein-midje    "3.2.1"]
-                                          [lein-licenses "0.2.2"]]}}
-  :jvm-opts         ~(let [version     (System/getProperty "java.version")
-                           [major _ _] (clojure.string/split version #"\.")]
-                       (if (>= (java.lang.Integer/parseInt major) 9)
-                         ["--add-modules" "java.xml.bind"]
-                         []))
+  :description         "A workaround for https://dev.clojure.org/jira/browse/CLJ-2253"
+  :url                 "https://github.com/pmonks/CLJ-2253"
+  :license             {:spdx-license-identifier "Apache-2.0"
+                        :name                    "Apache License, Version 2.0"
+                        :url                     "http://www.apache.org/licenses/LICENSE-2.0"}
+  :min-lein-version    "2.8.1"
+  :repositories        [["sonatype-snapshots" {:url "https://oss.sonatype.org/content/groups/public" :snapshots true}]
+                        ["jitpack"            {:url "https://jitpack.io"}]]
+  :dependencies        [
+                         [org.clojure/clojure "1.9.0"]
+                       ]
+  :profiles            {:dev {:dependencies [[midje "1.9.1"]]
+                              :plugins      [[lein-midje    "3.2.1"]
+                                             [lein-licenses "0.2.2"]]}}
+  :deploy-repositories [
+                         ["snapshots" {:url      "https://clojars.org/repo"
+                                       :username :env/clojars_username
+                                       :password :env/clojars_password}]
+                         ["releases"  {:url      "https://clojars.org/repo"
+                                       :username :env/clojars_username
+                                       :password :env/clojars_password}]
+                       ]
+  :jvm-opts            ~(let [version     (System/getProperty "java.version")
+                              [major _ _] (clojure.string/split version #"\.")]
+                          (if (>= (java.lang.Integer/parseInt major) 9)
+                            ["--add-modules" "java.xml.bind"]
+                            []))
   )
