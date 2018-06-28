@@ -25,7 +25,7 @@ The latest released version is:
 Alternatively, you may prefer to kick the library's tyres without creating a project.  This is a snap with the awesome [`lein try` plugin](https://github.com/rkneufeld/lein-try):
 
 ```shell
-$ lein try org.clojars.pmonks/CLJ-2253
+$ lein try org.clojars.pmonks/clj-2253 "0.1.0-SNAPSHOT"
 ```
 
 You will be dropped in a REPL with the library downloaded and ready for use.
