@@ -1,4 +1,6 @@
-sudo: false
+# needed to work around https://github.com/travis-ci/travis-ci/issues/9713
+sudo: true
+#sudo: false
 language: clojure
 lein: 2.8.1
 
