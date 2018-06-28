@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/pmonks/CLJ-2253.svg?branch=master)](https://travis-ci.org/pmonks/CLJ-2253)
+[![Build Status](https://travis-ci.com/pmonks/CLJ-2253.svg?branch=master)](https://travis-ci.com/pmonks/CLJ-2253)
 [![Open Issues](https://img.shields.io/github/issues/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/issues)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/pmonks/CLJ-2253.svg)](http://isitmaintained.com/project/pmonks/CLJ-2253 "Average time to resolve an issue")
 [![License](https://img.shields.io/github/license/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/master/LICENSE)
