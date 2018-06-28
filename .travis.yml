@@ -1,0 +1,18 @@
+sudo: false
+language: clojure
+lein: 2.8.1
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+  - oraclejdk10
+
+script: lein check
+
+deploy:
+  # Deploy binaries to Clojars, using LTS version of Java
+  - provider: script
+    skip_cleanup: true
+    script: lein deploy
+    on:
+      branch: master
+      jdk: oraclejdk8
