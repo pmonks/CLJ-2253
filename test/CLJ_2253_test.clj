@@ -26,12 +26,14 @@
     (is (= "VGhpcyBsaWJyYXJ5IHJlYWxseSBzaG91bGRuJ3QgaGF2ZSB0byBleGlzdC4uLg==" (base64-encode "This library really shouldn't have to exist...")))
     (is (= "8J+SqQ=="                                                         (base64-encode "💩")))))
 
-(println "Please open https://webhook.site/#/8f45a5ba-d1a7-48be-bc17-416c7699de05 in a browser, in order to confirm that basic auth information is being sent correctly.")
-(println "Please also note that when java.net.SocketExceptions are thrown, it indicates that webhook.site has been overloaded and is shedding load.")
+; Commented out these tests, since webhook.site seems to get overloaded a lot, and I haven't found a good alternative yet...
 
-(deftest slurping-urls
-  (testing "Slurping from URLs"
-    (is (= ""                        (slurp "https://webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
-    (is (= ""                        (slurp "https://username:password@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
-    (is (= ""                        (slurp "https://someoneelse:letmein@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
-    (is (thrown? java.io.IOException (slurp "https://invalid:invalid@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05/401")))))
+;(println "Please open https://webhook.site/#/8f45a5ba-d1a7-48be-bc17-416c7699de05 in a browser, in order to confirm that basic auth information is being sent correctly.")
+;(println "Please also note that when java.net.SocketExceptions are thrown, it indicates that webhook.site has been overloaded and is shedding load.")
+
+;(deftest slurping-urls
+;  (testing "Slurping from URLs"
+;    (is (= ""                        (slurp "https://webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
+;    (is (= ""                        (slurp "https://username:password@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
+;    (is (= ""                        (slurp "https://someoneelse:letmein@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
+;    (is (thrown? java.io.IOException (slurp "https://invalid:invalid@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05/401")))))
