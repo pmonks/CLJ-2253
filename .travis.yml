@@ -1,6 +1,6 @@
-# needed to work around https://github.com/travis-ci/travis-ci/issues/9713
-sudo: true
-#sudo: false
+# work around https://github.com/travis-ci/travis-ci/issues/9713
+#sudo: true
+sudo: false
 language: clojure
 lein: 2.8.1
 
@@ -14,22 +14,23 @@ env:
 addons:
   apt:
     packages:
-      - openjdk-6-jdk
+#      - openjdk-6-jdk
       - openjdk-7-jdk
 
 jdk:
-  - openjdk6
+# Maven, used by pomegranate, used by Leiningen, doesn't support Java 6, making it very difficult to test on this JVM...
+#  - openjdk6
   - openjdk7
   - oraclejdk8
   - oraclejdk9
   - oraclejdk10
 
-script:
+script: lein do version, check
   # work around https://github.com/travis-ci/travis-ci/issues/9713
-  - echo $JAVA_HOME
-  - if [[ $JAVA_HOME = *java-6* ]]; then jdk_switcher use openjdk6; fi
-  - java -version
-  - lein check
+#  - echo $JAVA_HOME
+#  - if [[ $JAVA_HOME = *java-6* ]]; then jdk_switcher use openjdk6; fi
+#  - java -version
+#  - lein check
 
 deploy:
   # Deploy binaries to Clojars, using LTS version of Java
