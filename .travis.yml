@@ -19,7 +19,7 @@ deploy:
   # Deploy binaries to Clojars, using LTS version of Java
   - provider: script
     skip_cleanup: true
-    script: lein deploy clojars
+    script: lein deploy
     on:
       branch: master
       jdk: oraclejdk8
