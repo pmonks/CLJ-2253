@@ -47,6 +47,10 @@ Require it in your project:
   (:require [CLJ-2253]))
 ```
 
+### Using on JVM 9+
+
+Thanks to Project Jigsaw, Java 9 and up no longer include the modules required by this library (at least by default).  To remedy this, make sure to start a v9+ JVM where this code is in use with the command line option `--add-modules java.xml.bind`.  If your project targets multiple versions of Java both pre- and post- Java 9, you can conditionally add this flag as [shown here](https://github.com/pmonks/CLJ-2253/blob/master/project.clj#L37-L41).
+
 ## Contributor Information
 
 [GitHub project](https://github.com/pmonks/CLJ-2253)
