@@ -41,7 +41,7 @@ You will be dropped in a REPL with the library downloaded and ready for use.
 Or, if you have done a `brew install clojure`, you can simply
 
 ```shell
-$ clj
+$ clj -Sdeps '{:deps {org.clojars.pmonks/clj-2253 {:mvn/version "#.#.#"}}}'
 ```
 
 ## Usage
