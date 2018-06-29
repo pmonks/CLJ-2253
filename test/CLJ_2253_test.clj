@@ -21,12 +21,12 @@
 (println "\n☔️ Tests running on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version"))
 
 (deftest base64-encoding
-  (testing "Basic BASE64 encoding"
-    (is (thrown? java.lang.NullPointerException                               (base64-encode nil)))
-    (is (= ""                                                                 (base64-encode "")))
-    (is (= "Zm9v"                                                             (base64-encode "foo")))
-    (is (= "VGhpcyBsaWJyYXJ5IHJlYWxseSBzaG91bGRuJ3QgaGF2ZSB0byBleGlzdC4uLg==" (base64-encode "This library really shouldn't have to exist...")))
-    (is (= "8J+SqQ=="                                                         (base64-encode "💩")))))
+  (testing "Basic BASE64 encoding (note: private fn under test)"
+    (is (thrown? java.lang.NullPointerException                               (#'CLJ-2253/base64-encode nil)))
+    (is (= ""                                                                 (#'CLJ-2253/base64-encode "")))
+    (is (= "Zm9v"                                                             (#'CLJ-2253/base64-encode "foo")))
+    (is (= "VGhpcyBsaWJyYXJ5IHJlYWxseSBzaG91bGRuJ3QgaGF2ZSB0byBleGlzdC4uLg==" (#'CLJ-2253/base64-encode "This library really shouldn't have to exist...")))
+    (is (= "8J+SqQ=="                                                         (#'CLJ-2253/base64-encode "💩")))))
 
 ; Commented out these tests, since webhook.site seems to get overloaded a lot, and I haven't found a good alternative yet...
 
