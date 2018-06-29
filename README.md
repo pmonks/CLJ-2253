@@ -3,6 +3,7 @@
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/pmonks/CLJ-2253.svg)](http://isitmaintained.com/project/pmonks/CLJ-2253 "Average time to resolve an issue")
 [![License](https://img.shields.io/github/license/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/master/LICENSE)
 [![Dependencies Status](https://versions.deps.co/pmonks/CLJ-2253/status.svg)](https://versions.deps.co/pmonks/CLJ-2253)
+[![Join the chat at https://gitter.im/CLJ-2253/Lobby](https://badges.gitter.im/CLJ-2253/Lobby.svg)](https://gitter.im/CLJ-2253/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # CLJ-2253
 
