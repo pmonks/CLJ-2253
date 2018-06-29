@@ -17,6 +17,14 @@ Plonk the following in your project.clj :dependencies, `lein deps` and you shoul
 [org.clojars.pmonks/clj-2253 "#.#.#"]   ; Where #.#.# is replaced with an actual version number
 ```
 
+Or if you're a user of `deps.edn`, add
+
+```clojure
+{org.clojars.pmonks/clj-2253 {:mvn/version "#.#.#"}} ; Where #.#.# is replaced with an actual version number
+```
+
+to your `:deps` map in your `deps.edn`
+
 The latest released version is:
 
 [![Clojars Project](https://img.shields.io/clojars/v/org.clojars.pmonks/clj-2253.svg)](https://clojars.org/org.clojars.pmonks/clj-2253)
@@ -29,6 +37,12 @@ $ lein try org.clojars.pmonks/clj-2253
 ```
 
 You will be dropped in a REPL with the library downloaded and ready for use.
+
+Or, if you have done a `brew install clojure`, you can simply
+
+```shell
+$ clj
+```
 
 ## Usage
 
