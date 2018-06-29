@@ -27,7 +27,7 @@ to your `:deps` map in your `deps.edn`
 
 The latest released version is:
 
-[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.pmonks/clj-2253.svg)](https://clojars.org/org.clojars.pmonks/clj-2253)
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.pmonks/clj-2253.svg)](https://clojars.org/org.clojars.pmonks/clj-2253) [![Join the chat at https://gitter.im/CLJ-2253/Lobby](https://badges.gitter.im/CLJ-2253/Lobby.svg)](https://gitter.im/CLJ-2253/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### Trying it Out
 Alternatively, you may prefer to kick the library's tyres without creating a project.  This is a snap with the awesome [`lein try` plugin](https://github.com/rkneufeld/lein-try):
