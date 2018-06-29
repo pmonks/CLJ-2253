@@ -15,6 +15,9 @@
 ; limitations under the License.
 ;
 
-(defn base64-encode
+(in-ns 'CLJ-2253)
+
+(defn- base64-encode
+  "BASE64 encodes a string (JVM versions 1.8 and up)."
   [^String s]
   (.encodeToString (java.util.Base64/getEncoder) (.getBytes s)))
