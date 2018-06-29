@@ -49,11 +49,11 @@ Require it in your project:
 
 ## Supported Versions
 
-CLJ-2253 is tested on all combinations of JVM versions 1.7 through 10 and Clojure versions 1.5.1 through 1.10-SNAPSHOT.  The one exception is the specific combination of JVM v1.7 and Clojure v1.10, since Clojure v1.10 only supports JVM v1.8 and up.
+CLJ-2253 is tested on all combinations of JVM versions 1.7 through 10 and Clojure versions 1.5.1 through 1.10-SNAPSHOT, with one exception: JVM v1.7 with Clojure v1.10 (since Clojure v1.10 only supports JVM v1.8 and up).
 
 ### Notes when Using JVM v9+
 
-Thanks to Project Jigsaw, JVM v9 and up no longer include the modules required by this library (at least by default).  To remedy this, make sure to start a v9+ JVM where this code is in use with the command line option `--add-modules java.xml.bind`.  If your project targets multiple versions of the JVM both pre- and post- v9, you can conditionally add this option to your build as [shown here](https://github.com/pmonks/CLJ-2253/blob/master/project.clj#L37-L41).
+Thanks to Project Jigsaw, JVM v9 and up no longer include the modules required by this library (at least by default).  To remedy this, make sure to start a v9+ JVM where this code is in use with the command line option `--add-modules java.xml.bind`.  If your project targets multiple versions of the JVM both pre- and post- v9, you can conditionally add this option to your build as [shown here](https://github.com/pmonks/CLJ-2253/blob/master/project.clj#L43-L47).
 
 ## Contributor Information
 
