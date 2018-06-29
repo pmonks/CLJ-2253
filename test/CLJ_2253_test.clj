@@ -18,6 +18,8 @@
   (:require [clojure.test :refer :all]
             [CLJ-2253     :refer :all]))
 
+(println "\n☔️ Tests running on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version"))
+
 (deftest base64-encoding
   (testing "Basic BASE64 encoding"
     (is (thrown? java.lang.NullPointerException                               (base64-encode nil)))
