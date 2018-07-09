@@ -64,7 +64,7 @@ Require it in your project:
 
 ## Tested Versions
 
-CLJ-2253 is tested on:
+CLJ-2253 is [tested on](https://travis-ci.com/pmonks/CLJ-2253):
 
 |                | JVM v1.6        | JVM v1.7       | JVM v1.8 | JVM v9 | JVM v10 |
 |           ---: |  :---:          |  :---:         |  :---:   |  :---: |  :---:  |
