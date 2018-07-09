@@ -16,8 +16,7 @@
 ;
 
 (ns test-http-server
-  (:require [clojure.string :as s]
-            [org.httpkit.server :as http]))
+  (:require [org.httpkit.server :as http]))
 
 (def ^:private http-server (atom nil))
 
@@ -31,10 +30,10 @@
   (let [{:keys [request-method headers uri]} req]
     (if (= :get request-method)
       (cond
-        (s/ends-with? uri "/401") response-401  ; Client requested a 401
-        (s/ends-with? uri "/403") response-403  ; Client requested a 403
-        (s/ends-with? uri "/404") response-404  ; Client requested a 404
-        (s/ends-with? uri "/secure")            ; Client requested the secure resource
+        (.endsWith ^String uri "/401") response-401  ; Client requested a 401
+        (.endsWith ^String uri "/403") response-403  ; Client requested a 403
+        (.endsWith ^String uri "/404") response-404  ; Client requested a 404
+        (.endsWith ^String uri "/secure")            ; Client requested the secure resource
           (if-let [auth (get headers "authorization")]
             (if (= auth "Basic a25vY2trbm9jazp3aG9zdGhlcmU=")   ; username=knockknock password=whosthere
               response-200                      ; Client provided correct creds
