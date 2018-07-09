@@ -1,5 +1,6 @@
 ;
-; Copyright © 2016-2017 Peter Monks
+; Copyright © 2018 Peter Monks
+; SPDX-License-Identifier: Apache-2.0
 ;
 ; Licensed under the Apache License, Version 2.0 (the "License");
 ; you may not use this file except in compliance with the License.
@@ -15,10 +16,11 @@
 ;
 
 (ns CLJ-2253-test
-  (:require [clojure.test :refer :all]
-            [CLJ-2253     :refer :all]))
+  (:require [clojure.test     :refer :all]
+            [test-http-server :refer :all]
+            [CLJ-2253         :refer :all]))
 
-(println "\n☔️ Tests running on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version"))
+(println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version"))
 
 (deftest base64-encoding
   (testing "Basic BASE64 encoding (note: private fn under test)"
@@ -28,14 +30,16 @@
     (is (= "VGhpcyBsaWJyYXJ5IHJlYWxseSBzaG91bGRuJ3QgaGF2ZSB0byBleGlzdC4uLg==" (#'CLJ-2253/base64-encode "This library really shouldn't have to exist...")))
     (is (= "8J+SqQ=="                                                         (#'CLJ-2253/base64-encode "💩")))))
 
-; Commented out these tests, since webhook.site seems to get overloaded a lot, and I haven't found a good alternative yet...
+(def ^:private port-number (let [socket (java.net.ServerSocket. 0)]
+                             (.close socket)
+                             (.getLocalPort socket)))
 
-;(println "Please open https://webhook.site/#/8f45a5ba-d1a7-48be-bc17-416c7699de05 in a browser, in order to confirm that basic auth information is being sent correctly.")
-;(println "Please also note that when java.net.SocketExceptions are thrown, it indicates that webhook.site has been overloaded and is shedding load.")
-
-;(deftest slurping-urls
-;  (testing "Slurping from URLs"
-;    (is (= ""                        (slurp "https://webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
-;    (is (= ""                        (slurp "https://username:password@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
-;    (is (= ""                        (slurp "https://someoneelse:letmein@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05")))
-;    (is (thrown? java.io.IOException (slurp "https://invalid:invalid@webhook.site/8f45a5ba-d1a7-48be-bc17-416c7699de05/401")))))
+(deftest slurping-urls
+  (println "  ⬆️ Starting test HTTP server on port" port-number "...")
+  (start-test-http-server port-number)
+  (testing "Slurping from URLs"
+    (is (= "Successful"              (slurp (str "http://localhost:" port-number "/"))))
+    (is (= "Successful"              (slurp (str "http://knockknock:whosthere@localhost:" port-number "/secure"))))
+    (is (thrown? java.io.IOException (slurp (str "http://invalid:invalid@localhost:" port-number "/secure")))))
+  (println "  ⬇️ Stopping test HTTP server...")
+  (stop-test-http-server))
