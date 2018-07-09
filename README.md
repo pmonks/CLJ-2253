@@ -62,9 +62,22 @@ Require it in your project:
   (:require [CLJ-2253]))
 ```
 
-## Supported Versions
+## Tested Versions
 
-CLJ-2253 is tested on all combinations of JVM versions 1.7 through 10 and Clojure versions 1.5.1 through 1.10-SNAPSHOT, with one exception: JVM v1.7 with Clojure v1.10 (since Clojure v1.10 only supports JVM v1.8 and up).
+CLJ-2253 is tested on:
+
+|                | JVM v1.6        | JVM v1.7       | JVM v1.8 | JVM v9 | JVM v10 |
+|           ---: |  :---:          |  :---:         |  :---:   |  :---: |  :---:  |
+| Clojure 1.5.1  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
+| Clojure 1.6.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
+| Clojure 1.7.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
+| Clojure 1.8.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
+| Clojure 1.9.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
+| Clojure 1.10.0 | ❌<sup>†</sup> | ❌<sup>‡</sup> | ✅      | ✅    | ✅      |
+
+<sup>†</sup> Leiningen only supports JVM v1.7 and up
+
+<sup>‡</sup> Clojure v1.10 only supports JVM v1.8 and up
 
 ### Notes when Using JVM v9+
 
