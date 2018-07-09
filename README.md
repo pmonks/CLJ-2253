@@ -47,7 +47,7 @@ $ clj -Sdeps '{:deps {org.clojars.pmonks/clj-2253 {:mvn/version "#.#.#"}}}'  # W
 
 ## Usage
 
-The functionality is provided by a single namespace, `CLJ-2253`, that will work its hacky magic as soon as its loaded.
+The functionality is provided by a single namespace, `CLJ-2253`, that will work its hacky magic as soon as it's loaded.
 
 Require it in the REPL (incl. a `lein try` REPL):
 
