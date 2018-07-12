@@ -81,7 +81,7 @@ CLJ-2253 is [tested on](https://travis-ci.com/pmonks/CLJ-2253):
 
 ### Notes when Using JVM v9+
 
-Thanks to Project Jigsaw, JVM v9 and up no longer include the modules required by this library (at least by default).  To remedy this, make sure to start a v9+ JVM where this code is in use with the command line option `--add-modules java.xml.bind`.  If your project targets multiple versions of the JVM both pre- and post- v9, you can conditionally add this option to your build as [shown here](https://github.com/pmonks/CLJ-2253/blob/master/project.clj#L43-L47).
+Thanks to [Project Jigsaw](http://openjdk.java.net/projects/jigsaw/), JVM v9 and up no longer include the modules required by this library (at least by default).  To remedy this, make sure to start a v9+ JVM where this code is in use with the command line option `--add-modules java.xml.bind`.  If your project targets multiple versions of the JVM both pre- and post- v9, you can conditionally add this option to your build as [shown here](https://github.com/pmonks/CLJ-2253/blob/master/project.clj#L43-L47).
 
 ## Contributor Information
 
