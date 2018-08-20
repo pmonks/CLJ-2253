@@ -75,7 +75,7 @@ CLJ-2253 is [tested on](https://travis-ci.com/pmonks/CLJ-2253):
 | Clojure 1.9.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
 | Clojure 1.10.0 | ❌<sup>†</sup> | ❌<sup>‡</sup> | ✅      | ✅    | ✅      |
 
-<sup>†</sup> Leiningen only supports JVM v1.7 and up
+<sup>†</sup> Leiningen v2.8 only supports JVM v1.7 and up
 
 <sup>‡</sup> Clojure v1.10 only supports JVM v1.8 and up
 
