@@ -19,7 +19,7 @@ jdk:
 
 script:
   - export PROFILES=1.5:1.6:1.7:1.8:1.9
-  - if [[ $JAVA_HOME != *java-7* ]]; then export PROFILES=${PROFILES}:1.10 fi
+  - if [[ $JAVA_HOME != *java-7* ]]; then export PROFILES=${PROFILES}:1.10; fi
   - lein with-profile ${PROFILES} do version, check, test
 
 deploy:
