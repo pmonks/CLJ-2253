@@ -66,22 +66,18 @@ Require it in your project:
 
 CLJ-2253 is [tested on](https://travis-ci.com/pmonks/CLJ-2253):
 
-|                | JVM v1.6        | JVM v1.7       | JVM v1.8 | JVM v9 | JVM v10 |
-|           ---: |  :---:          |  :---:         |  :---:   |  :---: |  :---:  |
-| Clojure 1.5.1  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
-| Clojure 1.6.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
-| Clojure 1.7.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
-| Clojure 1.8.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
-| Clojure 1.9.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      |
-| Clojure 1.10.0 | ❌<sup>†</sup> | ❌<sup>‡</sup> | ✅      | ✅    | ✅      |
+|                | JVM v1.6        | JVM v1.7       | JVM v1.8 | JVM v9 | JVM v10 | JVM v11 |
+|           ---: |  :---:          |  :---:         |  :---:   |  :---: |  :---:  |  :---:  |
+| Clojure 1.5.1  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.6.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.7.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.8.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.9.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.10.0 | ❌<sup>†</sup> | ❌<sup>‡</sup> | ✅      | ✅    | ✅      | ✅      |
 
 <sup>†</sup> Leiningen v2.8 only supports JVM v1.7 and up
 
 <sup>‡</sup> Clojure v1.10 only supports JVM v1.8 and up
-
-### Notes when Using JVM v9+
-
-Thanks to [Project Jigsaw](http://openjdk.java.net/projects/jigsaw/), JVM v9 and up no longer include the modules required by this library (at least by default).  To remedy this, make sure to start a v9+ JVM where this code is in use with the command line option `--add-modules java.xml.bind`.  If your project targets multiple versions of the JVM both pre- and post- v9, you can conditionally add this option to your build as [shown here](https://github.com/pmonks/CLJ-2253/blob/master/project.clj#L44-L48).
 
 ## Contributor Information
 
