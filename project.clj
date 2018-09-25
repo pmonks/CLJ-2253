@@ -40,10 +40,4 @@
                          ["releases"  {:url      "https://clojars.org/repo"
                                        :username :env/clojars_username
                                        :password :env/clojars_password}]
-                       ]
-  :jvm-opts            ~(let [version     (System/getProperty "java.version")
-                              [major _ _] (clojure.string/split version #"\.")]
-                          (if (>= (java.lang.Integer/parseInt major) 9)
-                            ["--add-modules" "java.xml.bind"]
-                            []))
-  )
+                       ])
