@@ -29,7 +29,7 @@ deploy:
     script: lein deploy
     on:
       branch: master
-      jdk: oraclejdk8
+      jdk: oraclejdk11
 
 notifications:
   webhooks:
