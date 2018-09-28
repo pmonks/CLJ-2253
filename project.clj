@@ -25,14 +25,14 @@
   :repositories        [["sonatype-snapshots" {:url "https://oss.sonatype.org/content/groups/public" :snapshots true}]
                         ["jitpack"            {:url "https://jitpack.io"}]]
   :dependencies        [[org.clojure/clojure "1.9.0"]]
-  :profiles            {:test {:dependencies [[http-kit "2.3.0"]]}
+  :profiles            {:dev  {:plugins [[lein-licenses "0.2.2"]]}
+                        :test {:dependencies [[http-kit "2.3.0"]]}
                         :1.5  {:dependencies [[org.clojure/clojure "1.5.1"]]}
                         :1.6  {:dependencies [[org.clojure/clojure "1.6.0"]]}
                         :1.7  {:dependencies [[org.clojure/clojure "1.7.0"]]}
                         :1.8  {:dependencies [[org.clojure/clojure "1.8.0"]]}
                         :1.9  {:dependencies [[org.clojure/clojure "1.9.0"]]}
-                        :1.10 {:dependencies [[org.clojure/clojure "1.10.0-master-SNAPSHOT"]]}
-                        :dev  {:plugins [[lein-licenses "0.2.2"]]}}
+                        :1.10 {:dependencies [[org.clojure/clojure "1.10.0-master-SNAPSHOT"]]}}
   :deploy-repositories [
                          ["snapshots" {:url      "https://clojars.org/repo"
                                        :username :env/clojars_username
