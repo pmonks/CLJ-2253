@@ -66,14 +66,14 @@ Require it in your project:
 
 CLJ-2253 is [tested on](https://travis-ci.com/pmonks/CLJ-2253):
 
-|                | JVM v1.6        | JVM v1.7       | JVM v1.8 | JVM v9 | JVM v10 | JVM v11 |
-|           ---: |  :---:          |  :---:         |  :---:   |  :---: |  :---:  |  :---:  |
-| Clojure 1.5.1  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
-| Clojure 1.6.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
-| Clojure 1.7.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
-| Clojure 1.8.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
-| Clojure 1.9.0  | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
-| Clojure 1.10.0 | ❌<sup>†</sup> | ❌<sup>‡</sup> | ✅      | ✅    | ✅      | ✅      |
+|                           | JVM v1.6        | JVM v1.7       | JVM v1.8 | JVM v9 | JVM v10 | JVM v11 |
+|                      ---: |  :---:          |  :---:         |  :---:   |  :---: |  :---:  |  :---:  |
+| Clojure 1.5.1             | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.6.0             | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.7.0             | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.8.0             | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.9.0             | ❌<sup>†</sup> | ✅             | ✅      | ✅    | ✅      | ✅      |
+| Clojure 1.10.0 (snapshot) | ❌<sup>†</sup> | ❌<sup>‡</sup> | ✅      | ✅    | ✅      | ✅      |
 
 <sup>†</sup> Leiningen v2.8 only supports JVM v1.7 and up
 
