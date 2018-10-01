@@ -11,39 +11,24 @@ This library implements a workaround for [CLJ-2253](https://dev.clojure.org/jira
 
 ## Installation
 
-CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/org.pmonks/clj-2253).
-Plonk the following in your project.clj :dependencies, `lein deps` and you should be good to go:
-
-```clojure
-[org.clojars.pmonks/clj-2253 "#.#.#"]   ; Where #.#.# is replaced with an actual version number
-```
-
-Or if you're a user of `deps.edn`, add
-
-```clojure
-{org.clojars.pmonks/clj-2253 {:mvn/version "#.#.#"}} ; Where #.#.# is replaced with an actual version number
-```
-
-to your `:deps` map in your `deps.edn`
-
-The latest released version is:
+CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/org.pmonks/clj-2253).  The latest released version is:
 
 [![Clojars Project](https://img.shields.io/clojars/v/org.clojars.pmonks/clj-2253.svg)](https://clojars.org/org.clojars.pmonks/clj-2253)
 
 ### Trying it Out
-Alternatively, you may prefer to kick the library's tyres without creating a project.  This is a snap with the awesome [`lein try` plugin](https://github.com/rkneufeld/lein-try):
+If you prefer to kick the library's tyres before creating a project, you can use the [`lein try` plugin](https://github.com/rkneufeld/lein-try):
 
 ```shell
 $ lein try org.clojars.pmonks/clj-2253
 ```
 
-You will be dropped in a REPL with the library downloaded and ready for use.
-
-Or, if you have done a `brew install clojure`, you can simply
+or, if you have installed the [Clojure CLI tools](https://clojure.org/guides/getting_started#_clojure_installer_and_cli_tools):
 
 ```shell
 $ clj -Sdeps '{:deps {org.clojars.pmonks/clj-2253 {:mvn/version "#.#.#"}}}'  # Where #.#.# is replaced with an actual version number
 ```
+
+Either way, you will be dropped in a REPL with the library downloaded and ready for use.
 
 ## Usage
 
