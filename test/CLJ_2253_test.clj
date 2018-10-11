@@ -20,7 +20,7 @@
             [test-http-server :refer :all]
             [CLJ-2253         :refer :all]))
 
-(println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version"))
+(println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version") (str "(" (System/getProperty "java.vm.name") " v" (System/getProperty "java.vm.version") ")"))
 
 (deftest base64-encoding
   (testing "Basic BASE64 encoding (note: private fn under test)"
