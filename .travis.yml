@@ -17,14 +17,9 @@ jdk:
   - openjdk10   # TravisCI doesn't provide oraclejdk10
   - openjdk11   # Don't fall for Oracle's trick: https://blog.joda.org/2018/09/do-not-fall-into-oracles-java-11-trap.html
 
-matrix:
-  include:
-    - jdk: openjdk10
-      before_install: &fix_certs
-        - rm "${JAVA_HOME}/lib/security/cacerts"
-        - ln -s /etc/ssl/certs/java/cacerts "${JAVA_HOME}/lib/security/cacerts"
-#    - jdk: openjdk11
-#      before_install: *fix_certs
+# Workaround for TravisCI's garbage openjdk10 base image
+before_install:
+  - if [[ $JAVA_HOME == *openjdk10* ]]; then rm "${JAVA_HOME}/lib/security/cacerts"; ln -s /etc/ssl/certs/java/cacerts "${JAVA_HOME}/lib/security/cacerts"; fi
 
 script:
   - export PROFILES=+1.5:+1.6:+1.7:+1.8:+1.9
