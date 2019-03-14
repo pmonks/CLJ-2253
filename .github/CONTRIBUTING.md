@@ -18,16 +18,14 @@ When you make a contribution to the CLJ-2253 project, you agree:
 
 ## Prerequisites
 
-* [ ] Have you reviewed the [troubleshooting guide](https://github.com/pmonks/CLJ-2253/wiki/Troubleshooting)?
-* [ ] Have you [searched for duplicates](https://github.com/pmonks/CLJ-2253/issues?utf8=%E2%9C%93&q=)?  A simple search for exception error messages or a summary of the unexpected behaviour should suffice.
-* [ ] Are you running the [latest release of CLJ-2253](https://clojars.org/org.clojars.pmonks/CLJ-2253)?
+* [ ] Have you [searched for duplicates](https://github.com/clj-commons/CLJ-2253/issues?utf8=%E2%9C%93&q=)?  A simple search for exception error messages or a summary of the unexpected behaviour should suffice.
+* [ ] Are you running the [latest release of CLJ-2253](https://clojars.org/clj-commons/CLJ-2253)?
 * [ ] Are you sure this is a bug or missing capability?
 
 ## Raising an Issue
 
-* Create your issue [here](https://github.com/pmonks/CLJ-2253/issues/new).
-* New issues contain two templates in the description: bug report and enhancement request. Please pick the most appropriate for your issue, and **delete the other**.
-  * Please also tag the new issue with either "Bug" or "Enhancement".
+* Create your issue [here](https://github.com/clj-commons/CLJ-2253/issues/new).
+* New issues contain two templates in the description: bug report and enhancement request. Please pick the most appropriate for your issue.
 * Please use [Markdown formatting](https://help.github.com/categories/writing-on-github/) liberally to assist in readability.
   * [Code fences](https://help.github.com/articles/creating-and-highlighting-code-blocks/) for exception stack traces and log entries, for example, massively improve readability.
 
@@ -39,13 +37,13 @@ To make review of PRs easier, please:
    * This helps expedite review by keeping the problem statement (the issue) explicitly separate from one of potentially many solutions (the PR).
  * Make sure your PRs will merge cleanly - PRs that don't are unlikely to be accepted.
  * For code contributions, follow the existing coding style.
- * For documentation contributions, follow the general structure, language, and tone of the [existing docs](https://github.com/pmonks/CLJ-2253/wiki).
+ * For documentation contributions, follow the general structure, language, and tone of the [existing docs](https://github.com/clj-commons/CLJ-2253/wiki).
  * Keep PRs small and cohesive - if you have multiple independent contributions, please submit them as independent PRs.
  * Minimise "spurious" changes (e.g. whitespace shenanigans).
  * Ensure all updated files include your copyright information at the top.
  * Ensure all new files include a header comment block containing the [Apache License v2.0 and your copyright information](http://www.apache.org/licenses/LICENSE-2.0#apply).
- * Add yourself to the top of the [CONTRIBUTORS file](https://github.com/pmonks/CLJ-2253/blob/master/CONTRIBUTORS.md).
- * If necessary (e.g. due to 3rd party dependency licensing requirements), update the [NOTICE file](https://github.com/pmonks/CLJ-2253/blob/master/NOTICE) with any new attribution notices.
+ * Add yourself to the [CONTRIBUTORS file](https://github.com/clj-commons/CLJ-2253/blob/master/CONTRIBUTORS.md).
+ * If necessary (e.g. due to 3rd party dependency licensing requirements), update the [NOTICE file](https://github.com/clj-commons/CLJ-2253/blob/master/NOTICE) with any new attribution notices.
 
 ## Commit and PR Messages
 
