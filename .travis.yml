@@ -1,3 +1,5 @@
+# Only trusty provides JDKs 7 & 8
+dist: trusty
 sudo: false
 language: clojure
 lein: 2.8.1
