@@ -70,6 +70,7 @@ CLJ-2253 is [tested on](https://travis-ci.com/clj-commons/CLJ-2253):
 ## Contributor Information
 
 Contributors, according to [Hall-Of-Fame](https://github.com/sourcerer-io/hall-of-fame):
+
 [![](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/images/0)](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/links/0)[![](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/images/1)](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/links/1)[![](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/images/2)](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/links/2)[![](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/images/3)](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/links/3)[![](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/images/4)](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/links/4)[![](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/images/5)](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/links/5)[![](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/images/6)](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/links/6)[![](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/images/7)](https://sourcerer.io/fame/pmonks/pmonks/CLJ-2253/links/7)
 
 [GitHub project](https://github.com/clj-commons/CLJ-2253)
