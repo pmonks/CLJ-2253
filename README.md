@@ -51,21 +51,23 @@ Require it in your project:
 
 CLJ-2253 is [tested on](https://travis-ci.com/clj-commons/CLJ-2253):
 
-|                | JVM v1.6         | JVM v1.7 (OpenJDK) | JVM v1.8 (Oracle) | JVM v9 (Oracle) | JVM v10 (OpenJDK) | JVM v11 (OpenJDK) | JVM v12 (OpenJDK) |
-|           ---: |  :---:           |  :---:             |  :---:            |  :---:          |  :---:            |  :---:            |  :---:            |
-| Clojure 1.4.0  | ❌<sup>1,2</sup> | ❌<sup>1</sup>     | ❌<sup>1</sup>   | ❌<sup>1</sup>  | ❌<sup>1</sup>    | ❌<sup>1</sup>    | ❌<sup>1</sup>   |
-| Clojure 1.5.1  | ❌<sup>2</sup>   | ✅                 | ✅               | ✅              | ✅                | ✅                | ✅               |
-| Clojure 1.6.0  | ❌<sup>2</sup>   | ✅                 | ✅               | ✅              | ✅                | ✅                | ✅               |
-| Clojure 1.7.0  | ❌<sup>2</sup>   | ✅                 | ✅               | ✅              | ✅                | ✅                | ✅               |
-| Clojure 1.8.0  | ❌<sup>2</sup>   | ✅                 | ✅               | ✅              | ✅                | ✅                | ✅               |
-| Clojure 1.9.0  | ❌<sup>2</sup>   | ✅                 | ✅               | ✅              | ✅                | ✅                | ✅               |
-| Clojure 1.10.1 | ❌<sup>2</sup>   | ❌<sup>3</sup>     | ✅               | ✅              | ✅                | ✅                | ✅               |
+|                | JVM v1.6         | JVM v1.7       | JVM v1.8        | JVM v9           | JVM v10          | JVM v11         |
+|           ---: |  :---:           |  :---:         |  :---:          |  :---:           |  :---:           |  :---:          |
+| Clojure 1.4.0  | ❌<sup>1,2</sup> | ❌<sup>1</sup> | ❌<sup>1</sup> | ❌<sup>1,3</sup> | ❌<sup>1,3</sup> | ❌<sup>1</sup> |
+| Clojure 1.5.1  | ❌<sup>2</sup>   | ✅             | ✅             | ❌<sup>3</sup>   | ❌<sup>3</sup>   | ✅             |
+| Clojure 1.6.0  | ❌<sup>2</sup>   | ✅             | ✅             | ❌<sup>3</sup>   | ❌<sup>3</sup>   | ✅             |
+| Clojure 1.7.0  | ❌<sup>2</sup>   | ✅             | ✅             | ❌<sup>3</sup>   | ❌<sup>3</sup>   | ✅             |
+| Clojure 1.8.0  | ❌<sup>2</sup>   | ✅             | ✅             | ❌<sup>3</sup>   | ❌<sup>3</sup>   | ✅             |
+| Clojure 1.9.0  | ❌<sup>2</sup>   | ✅             | ✅             | ❌<sup>3</sup>   | ❌<sup>3</sup>   | ✅             |
+| Clojure 1.10.1 | ❌<sup>2,4</sup> | ❌<sup>4</sup> | ✅             | ❌<sup>3</sup>   | ❌<sup>3</sup>   | ✅             |
 
-<sup>1</sup> I chose to only go back as far as Clojure v1.5.1.  If anyone needs this tested on older versions of Clojure, PRs are welcome!
+<sup>1</sup> I chose to only go back as far as Clojure v1.5.1.  If anyone needs this on older versions, PRs are welcome!
 
-<sup>2</sup> Leiningen v2.8+ only supports JVM v1.7 and up
+<sup>2</sup> Leiningen v2.8 only supports JVM v1.7 and up
 
-<sup>3</sup> Clojure v1.10+ only supports JVM v1.8 and up
+<sup>3</sup> Superceded, non-LTS version of the JVM
+
+<sup>4</sup> Clojure v1.10+ only supports JVM v1.8 and up
 
 ## Contributor Information
 

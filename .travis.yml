@@ -3,6 +3,13 @@ dist: trusty
 sudo: false
 language: clojure
 lein: 2.8.1
+dist: trusty   # Because Travis CI's support for older versions of Java on newer distros is *garbage*
+jdk:
+  - openjdk7
+  - oraclejdk8
+#  - oraclejdk9   # Removed as it slows down the build and is poorly supported by Travis CI
+#  - openjdk10    # Removed as it slows down the build and is poorly supported by Travis CI
+  - openjdk11     # Don't fall for Oracle's trick: https://blog.joda.org/2018/09/do-not-fall-into-oracles-java-11-trap.html
 
 env:
   global:
@@ -10,15 +17,6 @@ env:
     - secure: "I5KhnYAOlYplO6ZMWXJwgG4mJfP224Ps26vmU4eqR2xGTKbXTSRVKNnN6bz+fjtWTk78fman7S6Wqh6oSTebfshENnIoQ1lBfRBOp9QIWXgu4fohDeQhPrekIOm0QNcngMucJ8+69iYZ4unQbiwMlU7H80IOUtTSR129ix8tLKF8hG/PtrjOiIBl34Gz/y7mfE8AAc8H9szJyhrTsxHQdvAiNvHGw4tWIA2bqWm/kPGKZJ4z3TaWEvQxKwbU7wbsMLrxYo4HlrKjTcAk/TtsAWAy3BtswPAWeVdoCgi651UO5/yrDNYR2y0jjtAZcKMVhkOK/8ceKbRsZrzs6pf81sDDZN7frgeZHaABOe34FSuiBaPezRq/iqPqj7AX+aOe8FK1hz7Zk6p8AKn2C7UtJso8Hm5/02s3yGMNVHhWc22IFkCM93isLhwUHEbZYS8GR82Bz2E6GOcZiLJywsMkRO4z7uB/hYG78ai+yV7outrHyLkcWAhSy2Di+MJRv4weA8lRq+afjKKmdDvASnL6PpX79svsEjnUSEuV6AnHFSk0xFfCKwzfxCd4XVSwALVG2Pj7ylK2pwSCCYW6Nj+APBnsUPYIPp1x5eUfwaQTvhpyOoml+2ff9fvzLXW/mn6tAthMJVZ6MVsQCarjA9KC0Ww2wgWsCP+i934QczOdpOY="
     # CLOJARS_PASSWORD
     - secure: "YdEy3FXtIPB/ih0iyEvwBJhv0E+uamMXGqZNVrgaM5rgJI2Qf4yNMb6eW7BRbbdbVdVL1uzSEXoK6LK/Vo/Nkr9Eb5g4tcjzEby2LdSEoqHpUOrIinn6z30u2Gny8t9jD5iiOMxr6ZQMNTZsuZ3iJAkJRQuJ2JXV1StYOSk7xYIjk7MkwzLq7nfVZG8ed4GtKtC1tdpEVu0W2NO2X+g5votDOapu0xEq/hYwBEjG9TBhoF2XlBkUnhWueVo2j/M+wVP4X5PUCVoLpQF0kP+tnOOhoJBWf4q+y0s1+nmfcSh9c6Mq4W5TJ8RJsmvX6dl3VzyaQ5a/wBld1igBpNhsS1Lt30v89Pa46kYHjgBMckY3yC9fMFFZNYkdB4kq1YxYcd5+NfFLtIgEqIOE0fbHz1c4B+A4V4WSElytHlDuiCADWW/Bv3WlvqXIIYJuJxzMIzLNVf9Od8YN3OM4YY0KSp7p/gfl0qqFNamrgwEGTOXs8ivmtyVvuG6D+VcojSb5a+h6HoSe4hyi5qkVlYHCKTiNPisgKaWmlMwDPHcXYZyWMD7RLWKb5x563j11zj+YGvPYJZRSn2c7AiAP51vGLA8MufAzZhZTLq1x2iYW38vAGhBRL3lgPY7bU5om7l5P/8dK0e0h1xoPhUvkpkt2KFr4iG97xPM4ZiMu0zMkxVI="
-
-jdk:
-  # Note: Maven, used by pomegranate, used by Leiningen, doesn't support JVM v6, making it very difficult to test Clojure code on that version...
-  - openjdk7
-  - oraclejdk8
-  - oraclejdk9
-  - openjdk10
-  - openjdk11   # Don't fall for Oracle's trick: https://blog.joda.org/2018/09/do-not-fall-into-oracles-java-11-trap.html
-  - openjdk12
 
 # Workaround for TravisCI's garbage openjdk10 base image
 before_install:
