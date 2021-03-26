@@ -51,21 +51,19 @@ Require it in your project:
 
 CLJ-2253 is [tested on](https://travis-ci.com/clj-commons/CLJ-2253):
 
-|                | JVM v1.6         | JVM v1.7       | JVM v1.8 (LTS) | JVM v9,v10        | JVM v11 (LTS)   | JVM v12,v13,v14,v15 | JVM v16 (current FR) |
-|           ---: |  :---:           |  :---:         |  :---:          |  :---:           |  :---:          |  :---:              |  :---:               |
-| Clojure 1.6.0  | ❌<sup>1,2</sup> | ❌<sup>1</sup> | ❌<sup>1</sup> | ❌<sup>1,3</sup> | ❌<sup>1</sup> | ❌<sup>1,3</sup>    | ❌<sup>1</sup>       |
-| Clojure 1.7.0  | ❌<sup>2</sup>   | ✅             | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>      | ✅                   |
-| Clojure 1.8.0  | ❌<sup>2</sup>   | ✅             | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>      | ✅                   |
-| Clojure 1.9.0  | ❌<sup>2</sup>   | ✅             | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>      | ✅                   |
-| Clojure 1.10.3 | ❌<sup>2,4</sup> | ❌<sup>4</sup> | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>      | ✅                   |
+|                | JVM v1.7         | JVM v1.8 (LTS) | JVM v9, v10       | JVM v11 (LTS)  | JVM v12, v13, v14, v15 | JVM v16 (current FR) |
+|           ---: |  :---:           |  :---:          |  :---:           |  :---:         |  :---:                 |  :---:               |
+| Clojure 1.6.0  | ❌<sup>1,2</sup> | ❌<sup>1</sup> | ❌<sup>1,3</sup> | ❌<sup>1</sup> | ❌<sup>1,3</sup>       | ❌<sup>1</sup>      |
+| Clojure 1.7.0  | ❌<sup>2</sup>   | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>         | ✅                  |
+| Clojure 1.8.0  | ❌<sup>2</sup>   | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>         | ✅                  |
+| Clojure 1.9.0  | ❌<sup>2</sup>   | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>         | ✅                  |
+| Clojure 1.10.3 | ❌<sup>2</sup>   | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>         | ✅                  |
 
 <sup>1</sup> Leiningen v2.9+ only supports Clojure 1.7+
 
-<sup>2</sup> Leiningen v2.8+ only supports JVM v1.7+
+<sup>2</sup> Leiningen v2.9+ only supports JVM v1.8+
 
 <sup>3</sup> Superceded feature release (non-LTS) of the JVM
-
-<sup>4</sup> Clojure v1.10+ only supports JVM v1.8+
 
 ## Contributor Information
 

@@ -5,7 +5,6 @@ language: clojure
 lein: 2.9.5
 dist: trusty   # Because Travis CI's support for older versions of Java on newer distros is *garbage*
 jdk:
-  - openjdk7
   - oraclejdk8
   - openjdk11     # Don't fall for Oracle's trick: https://blog.joda.org/2018/09/do-not-fall-into-oracles-java-11-trap.html
   - openjdk16     # Don't fall for Oracle's trick: https://blog.joda.org/2018/09/do-not-fall-into-oracles-java-11-trap.html
