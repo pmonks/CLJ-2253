@@ -1,3 +1,3 @@
-{:deps    {org.clojure/clojure {:mvn/version "1.10.1"}}
+{:deps    {org.clojure/clojure {:mvn/version "1.10.3"}}
  :aliases {:test {:extra-paths ["test"]
-                  :extra-deps  {http-kit/http-kit {:mvn/version "2.3.0"}}}}}
+                  :extra-deps  {http-kit/http-kit {:mvn/version "2.5.3"}}}}}

@@ -21,18 +21,16 @@
   :license             {:spdx-license-identifier "Apache-2.0"
                         :name                    "Apache License, Version 2.0"
                         :url                     "http://www.apache.org/licenses/LICENSE-2.0"}
-  :min-lein-version    "2.8.1"
+  :min-lein-version    "2.9.5"
   :repositories        [["sonatype-snapshots" {:url "https://oss.sonatype.org/content/groups/public" :snapshots true}]
                         ["jitpack"            {:url "https://jitpack.io"}]]
-  :dependencies        [[org.clojure/clojure "1.10.1"]]
+  :dependencies        [[org.clojure/clojure "1.10.3"]]
   :profiles            {:dev  {:plugins [[lein-licenses "0.2.2"]]}
-                        :test {:dependencies [[http-kit "2.3.0"]]}
-                        :1.5  {:dependencies [[org.clojure/clojure "1.5.1"]]}
-                        :1.6  {:dependencies [[org.clojure/clojure "1.6.0"]]}
+                        :test {:dependencies [[http-kit "2.5.3"]]}
                         :1.7  {:dependencies [[org.clojure/clojure "1.7.0"]]}
                         :1.8  {:dependencies [[org.clojure/clojure "1.8.0"]]}
                         :1.9  {:dependencies [[org.clojure/clojure "1.9.0"]]}
-                        :1.10 {:dependencies [[org.clojure/clojure "1.10.1"]]}}
+                        :1.10 {:dependencies [[org.clojure/clojure "1.10.3"]]}}
   :deploy-repositories [
                          ["snapshots" {:url      "https://clojars.org/repo"
                                        :username :env/clojars_username

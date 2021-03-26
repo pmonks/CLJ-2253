@@ -2,14 +2,13 @@
 dist: trusty
 sudo: false
 language: clojure
-lein: 2.8.1
+lein: 2.9.5
 dist: trusty   # Because Travis CI's support for older versions of Java on newer distros is *garbage*
 jdk:
   - openjdk7
   - oraclejdk8
-#  - oraclejdk9   # Removed as it slows down the build and is poorly supported by Travis CI
-#  - openjdk10    # Removed as it slows down the build and is poorly supported by Travis CI
   - openjdk11     # Don't fall for Oracle's trick: https://blog.joda.org/2018/09/do-not-fall-into-oracles-java-11-trap.html
+  - openjdk16     # Don't fall for Oracle's trick: https://blog.joda.org/2018/09/do-not-fall-into-oracles-java-11-trap.html
 
 env:
   global:
@@ -23,7 +22,7 @@ before_install:
   - if [[ $JAVA_HOME == *openjdk10* ]]; then rm "${JAVA_HOME}/lib/security/cacerts"; ln -s /etc/ssl/certs/java/cacerts "${JAVA_HOME}/lib/security/cacerts"; fi
 
 script:
-  - export PROFILES=+1.5:+1.6:+1.7:+1.8:+1.9
+  - export PROFILES=+1.7:+1.8:+1.9
   - if [[ $JAVA_HOME != *java-7* ]]; then export PROFILES=${PROFILES}:+1.10; fi
   - lein with-profile ${PROFILES} do version, check, test
 
