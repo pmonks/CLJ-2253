@@ -1,9 +1,8 @@
-[![Build Status](https://travis-ci.com/clj-commons/CLJ-2253.svg?branch=master)](https://travis-ci.com/clj-commons/CLJ-2253)
-[![Open Issues](https://img.shields.io/github/issues/clj-commons/CLJ-2253.svg)](https://github.com/clj-commons/CLJ-2253/issues)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/clj-commons/CLJ-2253.svg)](http://isitmaintained.com/project/clj-commons/CLJ-2253 "Average time to resolve an issue")
-[![License](https://img.shields.io/github/license/clj-commons/CLJ-2253.svg)](https://github.com/clj-commons/CLJ-2253/blob/master/LICENSE)
-[![Dependencies Status](https://versions.deps.co/clj-commons/CLJ-2253/status.svg)](https://versions.deps.co/clj-commons/CLJ-2253)
-[![Join the chat at https://gitter.im/CLJ-2253/Lobby](https://badges.gitter.im/CLJ-2253/Lobby.svg)](https://gitter.im/CLJ-2253/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.com/com.github.pmonks/CLJ-2253.svg?branch=master)](https://travis-ci.com/com.github.pmonks/CLJ-2253)
+[![Open Issues](https://img.shields.io/github/issues/com.github.pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/issues)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/com.github.pmonks/CLJ-2253.svg)](http://isitmaintained.com/project/com.github.pmonks/CLJ-2253 "Average time to resolve an issue")
+[![License](https://img.shields.io/github/license/com.github.pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/master/LICENSE)
+[![Dependencies Status](https://versions.deps.co/com.github.pmonks/CLJ-2253/status.svg)](https://versions.deps.co/com.github.pmonks/CLJ-2253)
 
 # CLJ-2253
 
@@ -11,21 +10,21 @@ This library implements a workaround for [CLJ-2253](https://dev.clojure.org/jira
 
 ## Installation
 
-CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/clj-commons/clj-2253).  The latest released version is:
+CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/CLJ-2253).  The latest released version is:
 
-[![Clojars Project](https://img.shields.io/clojars/v/clj-commons/clj-2253.svg)](https://clojars.org/clj-commons/clj-2253)
+[![Clojars Project](https://img.shields.io/clojars/v/com.github.pmonks/CLJ-2253.svg)](https://clojars.org/com.github.pmonks/CLJ-2253)
 
 ### Trying it Out
 If you prefer to kick the library's tyres before creating a project, you can use the [`lein try` plugin](https://github.com/rkneufeld/lein-try):
 
 ```shell
-$ lein try clj-commons/clj-2253
+$ lein try com.github.pmonks/CLJ-2253
 ```
 
 or, if you have installed the [Clojure CLI tools](https://clojure.org/guides/getting_started#_clojure_installer_and_cli_tools):
 
 ```shell
-$ clj -Sdeps '{:deps {clj-commons/clj-2253 {:mvn/version "#.#.#"}}}'  # Where #.#.# is replaced with an actual version number
+$ clj -Sdeps '{:deps {com.github.pmonks/CLJ-2253 {:mvn/version "#.#.#"}}}'  # Where #.#.# is replaced with an actual version number
 ```
 
 Either way, you will be dropped in a REPL with the library downloaded and ready for use.
@@ -49,7 +48,7 @@ Require it in your project:
 
 ## Tested Versions
 
-CLJ-2253 is [tested on](https://travis-ci.com/clj-commons/CLJ-2253):
+CLJ-2253 is [tested on](https://travis-ci.com/com.github.pmonks/CLJ-2253):
 
 |                | JVM v1.7         | JVM v1.8 (LTS) | JVM v9, v10       | JVM v11 (LTS)  | JVM v12, v13, v14, v15 | JVM v16 (current FR) |
 |           ---: |  :---:           |  :---:          |  :---:           |  :---:         |  :---:                 |  :---:               |
@@ -67,9 +66,9 @@ CLJ-2253 is [tested on](https://travis-ci.com/clj-commons/CLJ-2253):
 
 ## Contributor Information
 
-[GitHub project](https://github.com/clj-commons/CLJ-2253)
+[GitHub project](https://github.com/pmonks/CLJ-2253)
 
-[Bug Tracker](https://github.com/clj-commons/CLJ-2253/issues)
+[Bug Tracker](https://github.com/pmonks/CLJ-2253/issues)
 
 ## License
 
