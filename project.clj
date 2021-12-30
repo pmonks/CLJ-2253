@@ -15,9 +15,9 @@
 ; limitations under the License.
 ;
 
-(defproject clj-commons/clj-2253 "0.3.0-SNAPSHOT"
+(defproject com.github.pmonks/CLJ-2253 "0.3.0-SNAPSHOT"
   :description         "A workaround for https://dev.clojure.org/jira/browse/CLJ-2253"
-  :url                 "https://github.com/clj-commons/CLJ-2253"
+  :url                 "https://github.com/pmonks/CLJ-2253"
   :license             {:spdx-license-identifier "Apache-2.0"
                         :name                    "Apache License, Version 2.0"
                         :url                     "http://www.apache.org/licenses/LICENSE-2.0"}
