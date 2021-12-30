@@ -51,7 +51,7 @@
     ; clj -M:eastwood
     :eastwood
       {:extra-deps {jonase/eastwood {:mvn/version "1.0.0"}}
-       :main-opts  ["-m" "eastwood.lint" "{:source-paths,[\"src\"]}"]}
+       :main-opts  ["-m" "eastwood.lint" "{:source-paths,[\"src\"],:exclude-linters,[:unused-ret-vals-in-try,:no-ns-form-found]}"]}
 
     ; clj -M:outdated
     :outdated

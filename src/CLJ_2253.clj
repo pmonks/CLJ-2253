@@ -22,7 +22,7 @@
 (try
   (Class/forName "java.util.Base64")
   (load "base64/jdk18up")
-  (catch ClassNotFoundException cnfe
+  (catch ClassNotFoundException _
     (load "base64/jdk17down")))
 
 (defn- open-input-stream [^java.net.URL url]

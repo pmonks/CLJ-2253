@@ -17,6 +17,7 @@
 
 (in-ns 'CLJ-2253)
 
+#_{:clj-kondo/ignore [:redefined-var]}
 (defn- base64-encode
   "BASE64 encodes a string (JVM versions 1.8 and up)."
   [^String s]
