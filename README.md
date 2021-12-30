@@ -1,8 +1,9 @@
-[![Build Status](https://travis-ci.com/com.github.pmonks/CLJ-2253.svg?branch=master)](https://travis-ci.com/com.github.pmonks/CLJ-2253)
-[![Open Issues](https://img.shields.io/github/issues/com.github.pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/issues)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/com.github.pmonks/CLJ-2253.svg)](http://isitmaintained.com/project/com.github.pmonks/CLJ-2253 "Average time to resolve an issue")
-[![License](https://img.shields.io/github/license/com.github.pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/master/LICENSE)
-[![Dependencies Status](https://versions.deps.co/com.github.pmonks/CLJ-2253/status.svg)](https://versions.deps.co/com.github.pmonks/CLJ-2253)
+| | | |
+|---:|:---:|:---:|
+| [**main**](https://github.com/pmonks/CLJ-2253/tree/main) | [![CI](https://github.com/pmonks/CLJ-2253/workflows/CI/badge.svg?branch=main)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Aci) | [![Dependencies](https://github.com/pmonks/CLJ-2253/workflows/dependencies/badge.svg?branch=main)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Adependencies) |
+| [**dev**](https://github.com/pmonks/CLJ-2253/tree/dev)  | [![CI](https://github.com/pmonks/CLJ-2253/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3ACI) | [![Dependencies](https://github.com/pmonks/CLJ-2253/workflows/dependencies/badge.svg?branch=dev)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Adependencies) |
+
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/CLJ-2253)](https://clojars.org/com.github.pmonks/CLJ-2253/) [![Open Issues](https://img.shields.io/github/issues/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/issues) [![License](https://img.shields.io/github/license/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/main/LICENSE)
 
 # CLJ-2253
 
@@ -10,30 +11,29 @@ This library implements a workaround for [CLJ-2253](https://dev.clojure.org/jira
 
 ## Installation
 
-CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/CLJ-2253).  The latest released version is:
-
-[![Clojars Project](https://img.shields.io/clojars/v/com.github.pmonks/CLJ-2253.svg)](https://clojars.org/com.github.pmonks/CLJ-2253)
+CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/CLJ-2253).
 
 ### Trying it Out
-If you prefer to kick the library's tyres before creating a project, you can use the [`lein try` plugin](https://github.com/rkneufeld/lein-try):
 
-```shell
-$ lein try com.github.pmonks/CLJ-2253
-```
-
-or, if you have installed the [Clojure CLI tools](https://clojure.org/guides/getting_started#_clojure_installer_and_cli_tools):
+If you use the Clojure CLI tools:
 
 ```shell
 $ clj -Sdeps '{:deps {com.github.pmonks/CLJ-2253 {:mvn/version "#.#.#"}}}'  # Where #.#.# is replaced with an actual version number
+```
+
+If you use Leiningen:
+
+```shell
+$ lein try com.github.pmonks/CLJ-2253
 ```
 
 Either way, you will be dropped in a REPL with the library downloaded and ready for use.
 
 ## Usage
 
-The functionality is provided by a single namespace, `CLJ-2253`, that will work its hacky magic as soon as it's loaded.
+The functionality is provided by a single namespace, `CLJ-2253`, that will work its hacky magic as soon as it's `require`d.
 
-Require it in the REPL (incl. a `lein try` REPL):
+Require it in the REPL:
 
 ```clojure
 (require '[CLJ-2253])
@@ -46,29 +46,23 @@ Require it in your project:
   (:require [CLJ-2253]))
 ```
 
-## Tested Versions
-
-CLJ-2253 is [tested on](https://travis-ci.com/com.github.pmonks/CLJ-2253):
-
-|                | JVM v1.7         | JVM v1.8 (LTS) | JVM v9, v10       | JVM v11 (LTS)  | JVM v12, v13, v14, v15 | JVM v16 (current FR) |
-|           ---: |  :---:           |  :---:          |  :---:           |  :---:         |  :---:                 |  :---:               |
-| Clojure 1.6.0  | ❌<sup>1,2</sup> | ❌<sup>1</sup> | ❌<sup>1,3</sup> | ❌<sup>1</sup> | ❌<sup>1,3</sup>       | ❌<sup>1</sup>      |
-| Clojure 1.7.0  | ❌<sup>2</sup>   | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>         | ✅                  |
-| Clojure 1.8.0  | ❌<sup>2</sup>   | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>         | ✅                  |
-| Clojure 1.9.0  | ❌<sup>2</sup>   | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>         | ✅                  |
-| Clojure 1.10.3 | ❌<sup>2</sup>   | ✅             | ❌<sup>3</sup>   | ✅             | ❌<sup>3</sup>         | ✅                  |
-
-<sup>1</sup> Leiningen v2.9+ only supports Clojure 1.7+
-
-<sup>2</sup> Leiningen v2.9+ only supports JVM v1.8+
-
-<sup>3</sup> Superceded feature release (non-LTS) of the JVM
-
 ## Contributor Information
+
+[Contributing Guidelines](https://github.com/pmonks/CLJ-2253/blob/main/.github/CONTRIBUTING.md)
 
 [GitHub project](https://github.com/pmonks/CLJ-2253)
 
 [Bug Tracker](https://github.com/pmonks/CLJ-2253/issues)
+
+### Developer Workflow
+
+The repository has two permanent branches: `main` and `dev`.  **All development must occur either in branch `dev`, or (preferably) in feature branches off of `dev`.**  All PRs must also be submitted against `dev`; the `main` branch is **only** updated from `dev` via PRs created by the core development team.  All other changes submitted to `main` will be rejected.
+
+This model allows otherwise unrelated changes to be batched up in the `dev` branch, integration tested there, and then released en masse to the `main` branch, which will trigger automated generation and deployment of the release.
+
+### Why are there so many different groupIds on Clojars for this project?
+
+The project was originally developed under my personal GitHub account.  In 2018 it was transferred to the `clj-commons` GitHub organisation, but then, as that group refined their scope and mission, it was determined that it no longer belonged there, and the project were transferred back in late 2021.  During this time the build tooling for the project also changed from Leiningen to tools.build, which created further groupId churn (tools.build introduced special, useful semantics for `com.github.username` groupIds that don't exist with Leiningen or Clojars).
 
 ## License
 
@@ -78,16 +72,16 @@ Distributed under the [Apache License, Version 2.0](http://www.apache.org/licens
 
 SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
 
-### 3rd Party Licenses
+### Dependency Licenses
 
-To see the full list of licenses of all third party libraries used by this project, please run:
+To see the licenses for all dependencies used by this project, please run:
 
 ```shell
-$ lein licenses :csv | cut -d , -f3 | sort | uniq
+$ clj -T:build licenses
 ```
 
-To see the dependencies and licenses in detail, run:
+To see each dependency and its license(s) in detail, run:
 
 ```shell
-$ lein licenses
+$ clj -T:build licenses :output :detailed
 ```
