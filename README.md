@@ -3,7 +3,7 @@
 | [**main**](https://github.com/pmonks/CLJ-2253/tree/main) | [![CI](https://github.com/pmonks/CLJ-2253/workflows/CI/badge.svg?branch=main)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Aci) | [![Dependencies](https://github.com/pmonks/CLJ-2253/workflows/dependencies/badge.svg?branch=main)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Adependencies) |
 | [**dev**](https://github.com/pmonks/CLJ-2253/tree/dev)  | [![CI](https://github.com/pmonks/CLJ-2253/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3ACI) | [![Dependencies](https://github.com/pmonks/CLJ-2253/workflows/dependencies/badge.svg?branch=dev)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Adependencies) |
 
-[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/CLJ-2253)](https://clojars.org/com.github.pmonks/CLJ-2253/) [![Open Issues](https://img.shields.io/github/issues/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/issues) [![License](https://img.shields.io/github/license/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/main/LICENSE)
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/clj-2253)](https://clojars.org/com.github.pmonks/clj-2253/) [![Open Issues](https://img.shields.io/github/issues/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/issues) [![License](https://img.shields.io/github/license/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/main/LICENSE)
 
 # CLJ-2253
 
@@ -11,20 +11,20 @@ This library implements a workaround for [CLJ-2253](https://dev.clojure.org/jira
 
 ## Installation
 
-CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/CLJ-2253).
+CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/clj-2253).
 
 ### Trying it Out
 
 If you use the Clojure CLI tools:
 
 ```shell
-$ clj -Sdeps '{:deps {com.github.pmonks/CLJ-2253 {:mvn/version "#.#.#"}}}'  # Where #.#.# is replaced with an actual version number
+$ clj -Sdeps '{:deps {com.github.pmonks/clj-2253 {:mvn/version "#.#.#"}}}'  # Where #.#.# is replaced with an actual version number
 ```
 
 If you use Leiningen:
 
 ```shell
-$ lein try com.github.pmonks/CLJ-2253
+$ lein try com.github.pmonks/clj-2253
 ```
 
 Either way, you will be dropped in a REPL with the library downloaded and ready for use.

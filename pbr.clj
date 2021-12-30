@@ -16,7 +16,7 @@
 ; SPDX-License-Identifier: Apache-2.0
 ;
 
-(def lib 'com.github.pmonks/CLJ-2253)
+(def lib 'com.github.pmonks/clj-2253)
 
 #_{:clj-kondo/ignore [:unresolved-namespace]}
 (def version (format "1.0.%s" (b/git-count-revs nil)))
