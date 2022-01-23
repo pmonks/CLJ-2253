@@ -34,4 +34,5 @@
                         :developers       [:developer {:id "pmonks"  :name "Peter Monks" :email "pmonks+CLJ-2253@gmail.com"}
                                                       {:id "slipset" :name "Erik Assum"}]
                         :scm              {:url "https://github.com/pmonks/CLJ-2253" :connection "scm:git:git://github.com/pmonks/CLJ-2253.git" :developer-connection "scm:git:ssh://git@github.com/pmonks/CLJ-2253.git"}
-                        :issue-management {:system "github" :url "https://github.com/pmonks/CLJ-2253/issues"}}))
+                        :issue-management {:system "github" :url "https://github.com/pmonks/CLJ-2253/issues"}}
+         :test-deps    {'http-kit/http-kit {:mvn/version "2.5.3"}}))
