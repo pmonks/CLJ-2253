@@ -28,7 +28,7 @@
          :version      version
          :write-pom    true
          :validate-pom true
-         :pom          {:description      "A workaround for https://dev.clojure.org/jira/browse/CLJ-2253."
+         :pom          {:description      "A workaround for https://clojure.atlassian.net/browse/CLJ-2253."
                         :url              "https://github.com/pmonks/CLJ-2253"
                         :licenses         [:license   {:name "Apache License 2.0" :url "http://www.apache.org/licenses/LICENSE-2.0.html"}]
                         :developers       [:developer {:id "pmonks"  :name "Peter Monks" :email "pmonks+CLJ-2253@gmail.com"}
