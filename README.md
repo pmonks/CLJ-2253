@@ -7,7 +7,7 @@
 
 # CLJ-2253
 
-This library implements a workaround for [CLJ-2253](https://dev.clojure.org/jira/browse/CLJ-2253).  Simply require (or use) this namespace before using `slurp` and you're done.
+This library implements a workaround for [CLJ-2253](https://clojure.atlassian.net/browse/CLJ-2253).  Simply require (or use) this namespace before using `slurp` and you're done.
 
 ## Installation
 

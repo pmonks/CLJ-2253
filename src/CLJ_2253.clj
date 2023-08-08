@@ -16,7 +16,7 @@
 ;
 
 (ns CLJ-2253
-  "A workaround for https://dev.clojure.org/jira/browse/CLJ-2253.  Simply require (or use) this namespace before using slurp and you're done."
+  "A workaround for https://clojure.atlassian.net/browse/CLJ-2253.  Simply require (or use) this namespace before using slurp and you're done."
   (:require [clojure.java.io :as io]))
 
 (try
