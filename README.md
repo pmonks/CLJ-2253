@@ -11,14 +11,14 @@ This library implements a workaround for [CLJ-2253](https://clojure.atlassian.ne
 
 ## Installation
 
-CLJ-2253 is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/clj-2253).
+`CLJ-2253` is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/clj-2253).
 
 ### Trying it Out
 
 If you use the Clojure CLI tools:
 
 ```shell
-$ clj -Sdeps '{:deps {com.github.pmonks/clj-2253 {:mvn/version "#.#.#"}}}'  # Where #.#.# is replaced with an actual version number
+$ clj -Sdeps '{:deps {com.github.pmonks/clj-2253 {:mvn/version "RELEASE"}}}'
 ```
 
 If you use Leiningen:
