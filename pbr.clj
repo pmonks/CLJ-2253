@@ -30,7 +30,7 @@
          :validate-pom true
          :pom          {:description      "A workaround for https://clojure.atlassian.net/browse/CLJ-2253."
                         :url              "https://github.com/pmonks/CLJ-2253"
-                        :licenses         [:license   {:name "Apache License 2.0" :url "http://www.apache.org/licenses/LICENSE-2.0.html"}]
+                        :licenses         [:license   {:name "Apache-2.0" :url "http://www.apache.org/licenses/LICENSE-2.0.html"}]
                         :developers       [:developer {:id "pmonks"  :name "Peter Monks" :email "pmonks+CLJ-2253@gmail.com"}
                                                       {:id "slipset" :name "Erik Assum"}]
                         :scm              {:url "https://github.com/pmonks/CLJ-2253" :connection "scm:git:git://github.com/pmonks/CLJ-2253.git" :developer-connection "scm:git:ssh://git@github.com/pmonks/CLJ-2253.git"}
