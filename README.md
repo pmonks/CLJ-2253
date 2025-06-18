@@ -1,11 +1,12 @@
-| | | |
-|---:|:---:|:---:|
-| [**main**](https://github.com/pmonks/CLJ-2253/tree/main) | [![CI](https://github.com/pmonks/CLJ-2253/workflows/CI/badge.svg?branch=main)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Aci) | [![Dependencies](https://github.com/pmonks/CLJ-2253/workflows/dependencies/badge.svg?branch=main)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Adependencies) |
-| [**dev**](https://github.com/pmonks/CLJ-2253/tree/dev)  | [![CI](https://github.com/pmonks/CLJ-2253/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3ACI) | [![Dependencies](https://github.com/pmonks/CLJ-2253/workflows/dependencies/badge.svg?branch=dev)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Adependencies) |
-
-[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/clj-2253)](https://clojars.org/com.github.pmonks/clj-2253/) [![Open Issues](https://img.shields.io/github/issues/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/issues) [![License](https://img.shields.io/github/license/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/main/LICENSE)
-
 # CLJ-2253
+
+[![CI](https://github.com/pmonks/CLJ-2253/workflows/CI/badge.svg?branch=dev)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3ACI)
+[![Dependencies](https://github.com/pmonks/CLJ-2253/workflows/dependencies/badge.svg?branch=dev)](https://github.com/pmonks/CLJ-2253/actions?query=workflow%3Adependencies)
+<br/>
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/clj-2253)](https://clojars.org/com.github.pmonks/clj-2253/)
+[![Open Issues](https://img.shields.io/github/issues/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/issues)
+[![License](https://img.shields.io/github/license/pmonks/CLJ-2253.svg)](https://github.com/pmonks/CLJ-2253/blob/main/LICENSE)
+![Maintained](https://badges.ws/badge/?label=maintained&value=yes,+at+author's+discretion)
 
 This library implements a workaround for [CLJ-2253](https://clojure.atlassian.net/browse/CLJ-2253).  Simply require (or use) this namespace before using `slurp` and you're done.
 
