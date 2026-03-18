@@ -1,4 +1,4 @@
-# Contributing to CLJ-2253
+# Contributing
 
 :+1: First off, thanks for taking the time to contribute! :+1:
 
@@ -13,6 +13,10 @@ When you make a contribution to the CLJ-2253 project, you agree:
 3. You are capable of granting these rights for the contribution.
 
 **By submitting a contribution to the CLJ-2253 project you agree to the above statements.**
+
+## A Note on "AI" Generated Code
+
+Because anyone who contributes "AI" generated code cannot guarantee requirements #1 and #3, such code will not be accepted into this project.
 
 # Contributing Issues
 
